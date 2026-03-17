@@ -21,7 +21,7 @@ public class player_movement : MonoBehaviour
     {
         
         movement = Vector3.zero;
-        if (Keyboard.current.wKey.isPressed && playerTouchGround)
+        if (Keyboard.current.spaceKey.isPressed && playerTouchGround)
         {
             player1.linearVelocity = new Vector3(player1.linearVelocity.x, jumpingspeed);
             playerTouchGround = false;
@@ -32,6 +32,14 @@ public class player_movement : MonoBehaviour
         else if (Keyboard.current.aKey.isPressed)
         {
             movement.x = -1;
+        }
+        else if (Keyboard.current.wKey.isPressed)
+        {
+            movement.z = 1;
+        }
+        else if (Keyboard.current.sKey.isPressed)
+        {
+            movement.z = -1;
         }
         movement.Normalize();
         

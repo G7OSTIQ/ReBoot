@@ -1,0 +1,31 @@
+using UnityEngine;
+
+public class followingplayer : MonoBehaviour
+{
+    
+    public Transform player;
+    public float speed = 5f;
+    
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+        GameObject findingplayer = GameObject.FindWithTag("Player");
+        if (findingplayer != null)
+        {
+            player = findingplayer.transform;
+        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (player == null) return;
+        
+        Vector3 chese = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        transform.position = chese;
+
+    }
+}
