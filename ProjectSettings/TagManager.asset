@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ground
   - Bullet
+  - above_object1
+  - above_object2
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Player1
   - Player2/CPU/AI
-  - 
-  - 
+  - bombs_falling
+  - player_bullets
   - 
   - 
   - 
