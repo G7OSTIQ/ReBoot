@@ -28,18 +28,23 @@ public class player_movement : MonoBehaviour
         }else if (Keyboard.current.dKey.isPressed)
         {
             movement.x = 1;
+            transform.rotation = Quaternion.Euler(0, 90, 0); 
+            
         }
         else if (Keyboard.current.aKey.isPressed)
         {
             movement.x = -1;
+            transform.rotation = Quaternion.Euler(0, -90, 0); 
         }
         else if (Keyboard.current.wKey.isPressed)
         {
             movement.z = 1;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (Keyboard.current.sKey.isPressed)
         {
             movement.z = -1;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         movement.Normalize();
         
