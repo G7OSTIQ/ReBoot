@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class above_objects_movement : MonoBehaviour
+public class spawners_movements : MonoBehaviour
 {
 
     public float speed = 3f;
-    public float distance = 50f;
+    public float distance = 40f;
     private Vector3 zeroposition;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +22,10 @@ public class above_objects_movement : MonoBehaviour
             transform.position = new Vector3(zeroposition.x + moving, transform.position.y, transform.position.z);
         }
         else if (gameObject.CompareTag("above_object2"))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zeroposition.z + moving);
+        }
+        else if (gameObject.CompareTag("Small_enimie"))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, zeroposition.z + moving);
         }

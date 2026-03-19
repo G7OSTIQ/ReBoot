@@ -12,6 +12,7 @@ TagManager:
   - gun_enimie
   - Boss_enimie
   - Players_bullet
+  - Powerup
   layers:
   - Default
   - TransparentFX

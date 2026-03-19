@@ -24,4 +24,12 @@ public class deleting_bombs_when_touching : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
