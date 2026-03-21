@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class bullet_collection : MonoBehaviour
+public class Powerup_collection : MonoBehaviour
 {
-    public int reload = 0;
     public float time = 10f;
     public float powerspeed = 25f;
-    public bool powerupActive = false;
+    public static bool powerupActive = false; // this needs to be static because it needs to share one piece of data
 
     private player_movement playermovement;
 
     void Start()
     {
+        powerupActive = false;
         playermovement = GetComponent<player_movement>(); // This gets a script where it needs to overwrite later on
     }
 

@@ -23,15 +23,28 @@ public class Enemy : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        
         //destory bullet and kills enemy
         if (other.CompareTag("Players_bullet"))
         {
-            player_total_score += score;
+            if (Powerup_collection.powerupActive)
+            {
+                player_total_score += powerup_score;
+            }
+            else
+            {
+                player_total_score += score;
+            }
+
             Player_score.text = "Score: " + player_total_score;
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-           
-        } 
+            
+            if (!Powerup_collection.powerupActive)// If powerup is collected the bullet will stay
+            {
+                Destroy(other.gameObject);
+            }
+
+            Destroy(gameObject); // else it will  get destroyed
+        }
         
     }
     

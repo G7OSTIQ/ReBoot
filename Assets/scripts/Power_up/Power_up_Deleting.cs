@@ -7,6 +7,7 @@ public class Power_up_Deleting : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, timer);
-        
     }
+    
+    
 }
