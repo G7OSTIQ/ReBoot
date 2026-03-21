@@ -13,6 +13,7 @@ TagManager:
   - Boss_enimie
   - Players_bullet
   - Powerup
+  - Power_up_spawner
   layers:
   - Default
   - TransparentFX

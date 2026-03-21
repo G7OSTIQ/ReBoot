@@ -27,7 +27,11 @@ public class spawners_movements : MonoBehaviour
         }
         else if (gameObject.CompareTag("Small_enimie"))
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zeroposition.z + moving);
+            transform.position = new Vector3(zeroposition.x + moving, transform.position.y, transform.position.z);
+        }
+        else if (gameObject.CompareTag("Power_up_spawner"))
+        {
+            transform.position = new Vector3(zeroposition.x + moving, transform.position.y, transform.position.z);
         }
         
     }
