@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class object_falling : MonoBehaviour
 {
+    
+    //This will be set when it reach 30/60 sec pass the obejcts will start falling  
+    
     public GameObject object_fall;
     public Transform[] object_spawner;
     
@@ -11,11 +14,11 @@ public class object_falling : MonoBehaviour
 
         if (gameObject.CompareTag("above_object1")) // will check which is above_object1 or 2
         {
-            InvokeRepeating("Spawnobjects", 5f, 1f); //2 is there for the amout of time for a bullet to spawn
+            InvokeRepeating("Spawnobjects", 5f, 1f); //5 will be change to 30
         }
         else if(gameObject.CompareTag("above_object2"))
         {
-            InvokeRepeating("Spawnobjects",10f, 1f);
+            InvokeRepeating("Spawnobjects",10f, 1f); //10 will be change to 60
         }
        
     }

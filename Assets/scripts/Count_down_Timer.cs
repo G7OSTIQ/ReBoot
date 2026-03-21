@@ -1,0 +1,29 @@
+using System;
+using TMPro;
+using UnityEngine;
+
+public class Count_down_Timer : MonoBehaviour
+{
+
+    public TMP_Text uiText;
+    public float gameplay_timer = 180f;
+
+    // Update is called once per frame
+    void Update()
+    {
+        gameplay_timer = Math.Max(gameplay_timer - Time.deltaTime, 0);
+        uiText.text = gameplay_timer.ToString("0");
+
+        if (gameplay_timer <= 0) // What this does when the count down hit 0 the player will die
+        {
+            gameplay_timer = 0;
+            uiText.text = "0";
+            
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                Destroy(player);
+            }
+        }
+    }
+}

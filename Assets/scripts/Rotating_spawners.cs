@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Rotating_bullet_spanwer : MonoBehaviour
+public class Rotating_spawners : MonoBehaviour
 {
     public float rotationwheel = 180f;
     

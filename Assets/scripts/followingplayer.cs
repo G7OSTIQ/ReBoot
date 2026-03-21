@@ -3,6 +3,8 @@ using UnityEngine;
 public class followingplayer : MonoBehaviour
 {
     
+    //This what lets the enemy follow the player script
+    
     public Transform player;
     public float speed = 5f;
     
