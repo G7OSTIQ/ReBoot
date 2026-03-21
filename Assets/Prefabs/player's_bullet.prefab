@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4b45d121781c443aa820d66ae0de6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Players_bullet_deleting
-  timer: 5
+  timer: 1
 --- !u!54 &8614177212609864330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0

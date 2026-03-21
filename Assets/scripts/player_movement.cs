@@ -8,7 +8,7 @@ public class player_movement : MonoBehaviour
     public float jumpingspeed = 5f;
     public Rigidbody player1;
     private Vector3 movement;
-    private bool playerTouchGround = false;
+    //private bool playerTouchGround = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,11 +21,12 @@ public class player_movement : MonoBehaviour
     {
         
         movement = Vector3.zero;
-        if (Keyboard.current.spaceKey.isPressed && playerTouchGround)
-        {
-            player1.linearVelocity = new Vector3(player1.linearVelocity.x, jumpingspeed);
-            playerTouchGround = false;
-        }else if (Keyboard.current.dKey.isPressed)
+        //if (Keyboard.current.spaceKey.isPressed && playerTouchGround)
+       // {
+         //   player1.linearVelocity = new Vector3(player1.linearVelocity.x, jumpingspeed);
+         //   playerTouchGround = false;
+       // }
+        if (Keyboard.current.dKey.isPressed)
         {
             movement.x = 1;
             transform.rotation = Quaternion.Euler(0, 90, 0); 
@@ -59,11 +60,11 @@ public class player_movement : MonoBehaviour
         );
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("ground"))
-        {
-            playerTouchGround = true;
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+   // {
+     //   if (collision.gameObject.CompareTag("ground"))
+     //   {
+    //        playerTouchGround = true;
+    //    }
+   // }
 }
