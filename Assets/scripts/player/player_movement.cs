@@ -14,6 +14,8 @@ public class player_movement : MonoBehaviour
     void Start()
     {
         player1.freezeRotation = true; // this stops it from tripping down when rotating can can also do it from inprector in Rigidbody in constraints Freeze Rotation
+        player1.linearVelocity = Vector3.zero;
+        Time.timeScale = 1f;             
     }
 
     // Update is called once per frame
