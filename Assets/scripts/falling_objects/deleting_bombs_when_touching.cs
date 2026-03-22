@@ -31,6 +31,7 @@ public class deleting_bombs_when_touching : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            Game_Over.gameover = true;
         }
     }
 }

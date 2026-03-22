@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(other.gameObject);
+            Game_Over.gameover = true; //once player is dead the gameover screen will show.
         }
         
         //destory bullet and kills enemy

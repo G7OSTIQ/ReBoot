@@ -23,6 +23,7 @@ public class Count_down_Timer : MonoBehaviour
             if (player != null)
             {
                 Destroy(player);
+                Game_Over.gameover = true;
             }
         }
     }
