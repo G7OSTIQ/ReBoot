@@ -1540,7 +1540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78afced29c62400468b4baaa23f4bedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Count_down_Timer
-  uiText: {fileID: 553873169}
+  Timer_Screen: {fileID: 553873167}
+  score_Text: {fileID: 1425515828}
+  timer_text: {fileID: 553873169}
   gameplay_timer: 180
 --- !u!1 &689706766
 GameObject:
