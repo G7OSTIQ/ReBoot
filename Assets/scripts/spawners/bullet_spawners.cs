@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class bullet_spawners : MonoBehaviour
 {
-    
+    //This is the powerup
     public GameObject bullet;
     public Transform[] Bullet_spawner;
     

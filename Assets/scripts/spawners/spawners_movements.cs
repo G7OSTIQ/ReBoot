@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class spawners_movements : MonoBehaviour
 {
-
+    //This is used to set the movement left and right or up and down for all the spawners
     public float speed = 3f;
     public float distance = 40f;
     private Vector3 zeroposition;

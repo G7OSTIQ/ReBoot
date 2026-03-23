@@ -31,7 +31,7 @@ public class Game_Over : MonoBehaviour
     {
         Time.timeScale = 1f;
         Enemy.player_total_score = 0;
-        Powerup_collection.powerupActive = false; // will reset the players pwoerup if it was claimed
+        Powerup_collection.powerupActive = false; // will reset the players power if it was claimed
         gameover = false;
         SceneManager.LoadScene("SampleScene");
     }

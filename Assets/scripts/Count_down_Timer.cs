@@ -27,7 +27,7 @@ public class Count_down_Timer : MonoBehaviour
             {
                 Destroy(player);
                 Game_Over.gameover = true;
-                Timer_Screen.SetActive(false);
+                Timer_Screen.SetActive(false); //This to hide ui once timer runs out
                 score_Text.SetActive(false);
             }
         }
