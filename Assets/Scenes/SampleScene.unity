@@ -1315,7 +1315,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 100
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1341,8 +1341,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
-  m_LocalPosition: {x: -0.71138, y: 19.13375, z: -11.1796}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.71138, y: 39.13375, z: -1.1796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3695,8 +3695,8 @@ Transform:
   m_GameObject: {fileID: 916567330}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -77.18, y: 10.2, z: -1.1}
-  m_LocalScale: {x: 23.444546, y: 22.31676, z: 136.2878}
+  m_LocalPosition: {x: -77.18, y: 28.432999, z: -1.1}
+  m_LocalScale: {x: 23.444546, y: 58.488224, z: 136.2878}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4282,8 +4282,8 @@ Transform:
   m_GameObject: {fileID: 1031741355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.7, y: 10.2, z: 79.01}
-  m_LocalScale: {x: 23.444546, y: 22.31676, z: 218.98723}
+  m_LocalPosition: {x: 2.7, y: 28.432999, z: 79.01}
+  m_LocalScale: {x: 23.444546, y: 58.488224, z: 218.98723}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6493,7 +6493,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 0, y: 20, z: -10}
+  FollowOffset: {x: 0, y: 40, z: 0}
 --- !u!114 &1457587473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6518,7 +6518,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 100
+    FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -6545,13 +6545,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457587471}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
-  m_LocalPosition: {x: -0.71138, y: 19.13375, z: -11.1796}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.71138, y: 39.13375, z: -1.1796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1467699374
 GameObject:
   m_ObjectHideFlags: 0
@@ -8284,8 +8284,8 @@ Transform:
   m_GameObject: {fileID: 1882522220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 82.8, y: 10.1494, z: -1.1}
-  m_LocalScale: {x: 23.444546, y: 22.31676, z: 136.2878}
+  m_LocalPosition: {x: 82.8, y: 28.3, z: -1.1}
+  m_LocalScale: {x: 23.444546, y: 58.488224, z: 136.2878}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8960,8 +8960,8 @@ Transform:
   m_GameObject: {fileID: 2023093392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.7, y: 10.2, z: -80.83}
-  m_LocalScale: {x: 23.444546, y: 22.31676, z: 218.98723}
+  m_LocalPosition: {x: 2.7, y: 28.432999, z: -80.83}
+  m_LocalScale: {x: 23.444546, y: 58.488224, z: 218.98723}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9775,9 +9775,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 330585546}
+  - {fileID: 1457587474}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 520747980}
+  - {fileID: 1353483278}
+  - {fileID: 668535977}
   - {fileID: 1298616009}
   - {fileID: 96343269}
   - {fileID: 2098510618}
@@ -9799,7 +9801,6 @@ SceneRoots:
   - {fileID: 135238869}
   - {fileID: 894547097}
   - {fileID: 1782869268}
-  - {fileID: 1457587474}
   - {fileID: 916567336}
   - {fileID: 182230972}
   - {fileID: 1125722802}
@@ -9815,5 +9816,4 @@ SceneRoots:
   - {fileID: 1355566851}
   - {fileID: 1443868561}
   - {fileID: 1811140910}
-  - {fileID: 1353483278}
-  - {fileID: 668535977}
+  - {fileID: 520747980}
