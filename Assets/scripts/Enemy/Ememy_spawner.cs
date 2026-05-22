@@ -18,11 +18,11 @@ public class Ememy_spawner : MonoBehaviour
         }
         else if(gameObject.CompareTag("enemy_spawner3"))
         {
-            InvokeRepeating("SpawnEnemy",20f, 4f);
+            InvokeRepeating("SpawnEnemy",30f, 4f);
         }
         else if(gameObject.CompareTag("enemy_spawner4"))
         {
-            InvokeRepeating("SpawnEnemy",30f, 4f); 
+            InvokeRepeating("SpawnEnemy",45f, 4f); 
         }
     }
 

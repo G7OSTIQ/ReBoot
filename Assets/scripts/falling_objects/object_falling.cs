@@ -14,7 +14,7 @@ public class object_falling : MonoBehaviour
 
         if (gameObject.CompareTag("above_object1")) // will check which is above_object1 or 2
         {
-            InvokeRepeating("Spawnobjects", 30f, 1f); //5 will be change to 30
+            InvokeRepeating("Spawnobjects", 40f, 1f); //5 will be change to 40
         }
         else if(gameObject.CompareTag("above_object2"))
         {

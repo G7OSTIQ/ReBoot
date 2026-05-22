@@ -594,8 +594,8 @@ GameObject:
   - component: {fileID: 4035485510230764914}
   - component: {fileID: 8606800315671477145}
   - component: {fileID: 8325884466957678897}
-  - component: {fileID: 1262073259462616299}
   - component: {fileID: -7238846388909433286}
+  - component: {fileID: 1303244240126229055}
   m_Layer: 7
   m_Name: Small_bug_enemy
   m_TagString: Bomb_enemy
@@ -733,20 +733,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1262073259462616299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4390484796053239110}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26aaff920861c08428f8649220406db1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Small_Bombs_enemy
-  score: 5
-  powerup_score: 10
 --- !u!114 &-7238846388909433286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +747,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_remover
   timer: 20
   maxtimer: 40
+--- !u!114 &1303244240126229055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4390484796053239110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fc0f86ee95b58489549f9d451fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  Player_score: {fileID: 0}
 --- !u!1 &4752336943167182721
 GameObject:
   m_ObjectHideFlags: 0

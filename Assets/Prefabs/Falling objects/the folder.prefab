@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2455452472426077265}
   - component: {fileID: 3207854439849391518}
   - component: {fileID: 1106593071523423120}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: the folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 5798808403617674285}
   - component: {fileID: 4269204344978424475}
   - component: {fileID: 5402577860030869870}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mesh381717428
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 7228102237822520872}
   - component: {fileID: 3141899016638856959}
   - component: {fileID: 6031052083972037498}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: mesh932501492
   m_TagString: Untagged
   m_Icon: {fileID: 0}

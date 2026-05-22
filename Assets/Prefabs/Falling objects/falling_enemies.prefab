@@ -229,8 +229,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.2091992, y: 1.9850786, z: 2.2817774}
-  m_Center: {x: 0.31393754, y: -0.08119857, z: -0.24846411}
+  m_Size: {x: 2.2091992, y: 2.808926, z: 2.7829788}
+  m_Center: {x: 0.31393754, y: 0.3307252, z: -0.49906456}
 --- !u!136 &8421895469617214252
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a00eeaaeb9b4cf46b9e30cff99cadbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::deleting_bombs_when_touching
-  boms_touching_ground: 0
+  obj_touching_ground: 0
   fallingParticles: {fileID: 6645696507034386966, guid: b3c4fb53d8d3742458a2b381e99a8891, type: 3}
 --- !u!114 &6726247326121881078
 MonoBehaviour:

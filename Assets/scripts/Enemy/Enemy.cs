@@ -22,9 +22,11 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Count_down_Timer timer = FindFirstObjectByType<Count_down_Timer>();
             Destroy(other.gameObject);
             Game_Over.gameover = true; //once player is dead the gameover screen will show.
-            Count_down_Timer.StopAllMusic();
+            timer.countdownAudioSource.Stop();
+            timer.backgroundAudioSource.Stop();
             GameObject.Find("Timer").SetActive(false); // set the timer and score hidden 
             //GameObject.Find("Score").SetActive(false);
         }

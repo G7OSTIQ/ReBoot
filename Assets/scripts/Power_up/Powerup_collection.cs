@@ -11,7 +11,6 @@ public class Powerup_collection : MonoBehaviour
     [Header("Audio")]
     public AudioSource audiosource;
     public AudioClip pickupaudio;
-
     private player_movement playermovement;
 
     void Start()

@@ -643,9 +643,9 @@ GameObject:
   - component: {fileID: 410179868874252024}
   - component: {fileID: 6479286511823740399}
   - component: {fileID: 8648707279794144084}
-  - component: {fileID: 4322213016197592035}
   - component: {fileID: 6431172294838569215}
   - component: {fileID: 5966875664492758855}
+  - component: {fileID: 3139269307360043733}
   m_Layer: 7
   m_Name: Bug_Enemy
   m_TagString: Bomb_enemy
@@ -760,23 +760,6 @@ CapsuleCollider:
   m_Height: 1.06799
   m_Direction: 1
   m_Center: {x: -8.3925415e-11, y: 0.5248994, z: -0.0016869492}
---- !u!114 &4322213016197592035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044390566753320545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d728905fb6eab474695b867d7b0f3324, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::bug_Enemy
-  score: 15
-  powerup_score: 25
-  small_enemy_prefab: {fileID: 4390484796053239110, guid: a9543410608d19044a9f91bba08fd38c, type: 3}
-  small_enemy_count: 3
-  hp: 4
 --- !u!95 &6431172294838569215
 Animator:
   serializedVersion: 7
@@ -813,6 +796,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_remover
   timer: 20
   maxtimer: 40
+--- !u!114 &3139269307360043733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5044390566753320545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fc0f86ee95b58489549f9d451fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  Player_score: {fileID: 0}
 --- !u!1 &5302388872209861112
 GameObject:
   m_ObjectHideFlags: 0
